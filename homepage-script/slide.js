@@ -1,4 +1,4 @@
-//let intervalId; // Declare a variable to store the interval ID
+let intervalId; // Declare a variable to store the interval ID
 
 function slideRight() {
   let lists = document.querySelectorAll('.item');
