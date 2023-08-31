@@ -1,0 +1,65 @@
+.main-section {
+  display: flex;
+
+  position: relative;
+}
+
+.main-section .vuchi {
+  width: 400px;
+  height: 400px;
+
+  object-fit: cover;
+
+  transition: transform  0.5s ease, box-shadow 0.5s ease;
+}
+.main-section .vuchi:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgb(87, 87, 87);
+  cursor: pointer;
+}
+
+.main-section .description1 {
+  position: absolute;
+  right: -100px;
+  top: -70px;
+
+  font-family: caveat;
+  font-size: 45px;
+}
+
+.main-section .arrow {
+  width: 150px;
+  height: 100px;
+}
+
+.main-section .arrow-container {
+  transform: rotate(155deg);
+
+  position: absolute;
+  right: -90px;
+  top: -25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-section .vuchi {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .main-section .description1 {
+    right: -80px;
+    top: -50px;
+  
+    font-size: 35px;
+  }
+  
+  .main-section .arrow {
+    width: 60px;
+    height: 40px;
+  }
+  
+  .main-section .arrow-container {
+    right: -35px;
+    top: -15px;
+  }
+}

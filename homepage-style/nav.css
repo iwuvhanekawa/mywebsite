@@ -1,0 +1,85 @@
+nav {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -300px;
+
+  width: 300px;
+
+  background-color: white;
+  box-shadow: -1px 0px 10px rgb(164, 164, 164);
+  transition: right 0.3s ease;
+}
+
+.menu-container {
+  margin-top: 80px;
+}
+
+.menu-container div {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 20px 40px 20px;
+
+  transition: transform 0.2s;
+}
+.menu-container div:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.x-icon {
+  width: 30px;
+  padding-top: 1px;
+  height: 26px;
+  margin-top: 25px;
+  margin-left: 250px;
+  cursor: pointer;
+}
+.x-icon .x-bar1, .x-bar2 {
+  width: 30px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #6a6a6a;
+  margin: 4px 0px;
+}
+.x-icon .x-bar1, .x-bar2 {
+  transform-origin: center;
+}
+.x-bar1 {
+  transform:translate(0,8px) rotate(45deg);
+}
+.x-bar2 {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    right: -300px;
+    width: 300px;
+  }
+
+  .menu-container {
+    margin-top: 40px;
+  }
+  
+  .menu-container div {
+    font-size: 20px;
+  }
+  
+  .x-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 265px;
+  }
+  .x-icon .x-bar1, .x-bar2 {
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 3px 0px;
+  }
+  .x-bar1 {
+    transform:translate(0,6px) rotate(45deg);
+  }
+}
