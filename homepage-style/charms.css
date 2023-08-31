@@ -25,4 +25,7 @@
     transform-origin: center;
     transform: rotate(-45deg) translate(0,0);
   }
+  .main-section-container #charm3 {
+  display:none;
+  }
 }
