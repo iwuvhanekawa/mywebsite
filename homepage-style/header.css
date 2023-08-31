@@ -133,8 +133,7 @@
     font-size: 20px;
   }
   .name:hover {
-    font-size: 25px;
-    margin-left: -15px;
+    transform: scale(1.06);
   }
   
   .name-container:hover .name-explaination1 {
